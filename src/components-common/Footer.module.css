@@ -1,0 +1,254 @@
+footer {
+  color: var(--color-content-light);
+  background-color: var(--color-content-dark);
+  padding: 15px;
+}
+footer a {
+  color: var(--color-content-light);
+  transition: 0.4s ease-in-out;
+  font-size: 15px;
+}
+footer a:hover {
+  font-weight: 700;
+  color: var(--color-background-yellow);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+.info-name {
+  flex: 1 0 33%;
+  font-family: var(--font-family-Garamond);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.info-name p:first-child {
+  font-size: 20px;
+  letter-spacing: 0.15em;
+}
+.info-name p:last-child {
+  font-size: 9px;
+  letter-spacing: 0.6em;
+}
+.info-contacts {
+  font-size: 13px;
+  text-align: center;
+}
+.info-contacts p:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.pages-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.social-links {
+  display: flex;
+  column-gap: 15px;
+}
+.social-links__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.social-links__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  row-gap: 10px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10px;
+}
+.subscribe p {
+  font-size: 15px;
+}
+.subscribe-email {
+  display: flex;
+  justify-content: center;
+}
+.subscribe input,
+.subscribe input:focus,
+.subscribe input::placeholder {
+  color: var(--color-content-light);
+}
+.subscribe input,
+.subscribe input:focus {
+  padding: 10px 0 10px 15px;
+  border: 2px solid var(--color-background-yellow);
+  border-radius: 5px;
+  background: transparent;
+}
+.subscribe button {
+  padding: 10px 15px;
+  font-weight: bold;
+  line-height: 20px;
+  border-radius: 5px;
+  color: var(--color-content-dark);
+  background-color: var(--color-background-yellow);
+  transition: 0.3s ease-out;
+}
+.subscribe button:hover {
+  color: var(--color-content-light);
+}
+
+.my-style {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.my-style span {
+  color: green;
+}
+
+@media screen and (min-width: 576px) {
+  footer a {
+    font-size: 16px;
+  }
+
+  .footer__container {
+    justify-content: space-evenly;
+  }
+
+  .info {
+    justify-content: space-evenly;
+    column-gap: 0;
+  }
+  .info-name {
+    flex: initial;
+  }
+  .info-name p:first-child {
+    font-size: 25px;
+  }
+  .info-contacts {
+    font-size: 14px;
+  }
+
+  .social-links {
+    column-gap: 20px;
+  }
+
+  .subscribe p {
+    font-size: 16px;
+  }
+
+  .my-style {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 11.65% 1.5% 4% 1.5%;
+    background-color: initial;
+    background-image: url(../assets//images/footer_cover.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .footer__container {
+    gap: 35px;
+  }
+
+  .info-contacts p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .pages-links {
+    row-gap: 13px;
+  }
+
+  .my-style {
+    padding-top: 35px;
+    margin-bottom: -20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 8.9% 1.5% 4% 1.5%;
+  }
+
+  .footer__container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .info {
+    flex: initial;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 22px;
+  }
+  .info-name p:first-child {
+    font-size: 25px;
+  }
+  .info-contacts {
+    max-width: 230px;
+    text-align: left;
+  }
+  .info-contacts p:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  .pages-links {
+    justify-content: space-around;
+  }
+
+  .social-links {
+    column-gap: 26px;
+  }
+  .social-links__icons {
+    justify-content: space-around;
+  }
+  .social-links__links {
+    justify-content: space-around;
+  }
+
+  .subscribe {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .subscribe input,
+  .subscribe input:focus {
+    padding: 15px;
+  }
+  .subscribe button {
+    padding: 15px 25px;
+  }
+
+  .my-style {
+    margin-bottom: -25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-contacts {
+    min-width: 375px;
+  }
+  .my-style {
+    margin-bottom: -40px;
+  }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --font-family-Montserrat: "Montserrat", sans-serif;
+  --font-family-Garamond: "Cormorant Garamond", serif;
+  --font-family-Roboto: "Roboto", sans-serif;
+  --color-content-light: #ffffff;
+  --color-content-dark: #14274a;
+  --color-background-yellow: #e0b973;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html,
+body {
+  font-size: 62.5%;
+  width: 95%;
+} */
+
+body {
+  font-family: var(--font-family-Montserrat);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-content-dark);
+  overflow-wrap: anywhere;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.-container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+p {
+  margin: 0;
+}

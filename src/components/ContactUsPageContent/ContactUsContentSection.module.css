@@ -1,0 +1,263 @@
+.section-content {
+  margin-bottom: 300px;
+}
+.section__container {
+  padding: 0px 10px;
+}
+
+.title {
+  font-family: var(--font-family-Garamond);
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.text {
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 50px;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  font-size: 20px;
+}
+.info__adress,
+.info__other {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.info__adress-map {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 700;
+}
+.info__adress-map a {
+  display: flex;
+}
+.info__adress-map .arrow {
+  font-size: 40px;
+  color: var(--color-content-dark);
+  transition: all 0.3s ease-out;
+}
+.info__adress-map .arrow:hover {
+  color: var(--color-background-yellow);
+}
+.info__other {
+  row-gap: 10px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.form__input label,
+.form__input input,
+.form__input textarea {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+}
+.form__input label {
+  font-family: var(--font-family-Roboto);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.form__input input,
+.form__input textarea {
+  padding: 5px;
+  border: 3px solid rgba(20, 39, 74, 0.5);
+  border-radius: 10px;
+}
+.form__input input {
+  height: 50px;
+}
+.form__input textarea {
+  height: 110px;
+}
+.form__input input:focus,
+.form__input textarea:focus {
+  outline: none;
+  border-color: var(--color-background-yellow);
+}
+.form__actions {
+  text-align: end;
+  font-size: 20px;
+}
+.button {
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: var(--color-content-light);
+  background-color: var(--color-background-yellow);
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background-color: var(--color-content-dark);
+}
+
+/* Media Queries ---------------------------------------------------------------------- */
+@media screen and (min-width: 576px) {
+  .section__container {
+    padding: 0px 15px;
+  }
+  .title {
+    font-size: 33px;
+  }
+  .text {
+    font-size: 23px;
+    margin-bottom: 70px;
+  }
+  .contacts__info {
+    font-size: 25px;
+  }
+  .info__adress-map .arrow {
+    font-size: 45px;
+  }
+  .info__other {
+    row-gap: 10px;
+  }
+
+  .contact__form {
+    row-gap: 30px;
+  }
+  .form__input label,
+  .form__input input,
+  .form__input textarea {
+    font-size: 23px;
+  }
+  .form__input input {
+    height: 60px;
+  }
+  .form__input textarea {
+    height: 200px;
+  }
+  .form__actions {
+    margin-top: 10px;
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    margin-bottom: 463px;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+  .text {
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+  .contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 35px;
+  }
+  .contacts__info {
+    row-gap: 50px;
+    max-width: 370px;
+  }
+  .info__other {
+    row-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section__container {
+    padding: 0px 24px;
+  }
+  .title {
+    font-size: 55px;
+  }
+  .text {
+    font-size: 27px;
+    margin-bottom: 110px;
+  }
+
+  .contacts {
+    column-gap: 70px;
+  }
+  .contacts__info {
+    row-gap: 60px;
+    max-width: 500px;
+    font-size: 30px;
+  }
+  .info__adress {
+    row-gap: 35px;
+  }
+  .info__adress-map .arrow {
+    font-size: 50px;
+  }
+
+  .contact__form {
+    width: 500px;
+  }
+  .form__input label,
+  .form__input input,
+  .form__input textarea {
+    font-size: 25px;
+  }
+  .form__input input {
+    height: 65px;
+  }
+  .form__input textarea {
+    height: 250px;
+  }
+
+  .form__actions {
+    margin-top: 17px;
+  }
+  .button {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 60px;
+  }
+  .text {
+    font-size: 30px;
+    margin-bottom: 167px;
+  }
+  .contacts {
+    column-gap: 150px;
+  }
+  .contacts__info {
+    row-gap: 90px;
+    max-width: 653px;
+    font-size: 40px;
+  }
+  .info__adress {
+    row-gap: 45px;
+    max-width: 570px;
+  }
+
+  .contact__form {
+    width: 570px;
+  }
+  .form__input input {
+    height: 78px;
+  }
+
+  .form__input textarea {
+    height: 352px;
+  }
+
+  .form__actions {
+    margin-top: 22px;
+    font-size: 25px;
+  }
+}

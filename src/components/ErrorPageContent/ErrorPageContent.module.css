@@ -1,0 +1,131 @@
+.section-error {
+  height: 100vh;
+  background-color: rgb(254, 193, 193, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-error__container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  font-weight: 700;
+  font-size: 65px;
+  color: rgb(156, 0, 0);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  opacity: 0.5;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+.info__status,
+.icon-gray {
+  font-weight: 700;
+  color: rgb(85, 85, 85);
+}
+.info__status-text {
+  margin-left: 10px;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 17px;
+}
+.action-back {
+  margin-bottom: 25px;
+}
+.click {
+  flex: 0 0 125px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--color-content-light);
+  background-color: var(--color-content-dark);
+  transition: all 0.3s ease-out;
+}
+.click:hover {
+  color: var(--color-content-dark);
+  background-color: var(--color-background-yellow);
+}
+
+@media screen and (min-width: 576px) {
+  .section-error__container {
+    padding: 15px 25px;
+  }
+  .top {
+    font-size: 100px;
+  }
+
+  .info {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .info__status-text {
+    margin-left: 15px;
+  }
+
+  .action {
+    font-size: 25px;
+  }
+  .click {
+    flex: 0 0 165px;
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-error__container {
+    padding: 5%;
+  }
+  .top {
+    font-size: 130px;
+  }
+
+  .info {
+    column-gap: 15px;
+    font-size: 39px;
+    margin-bottom: 70px;
+  }
+  .info__status-text {
+    margin-left: 20px;
+  }
+
+  .action {
+    font-size: 33px;
+  }
+  .action-back {
+    margin-bottom: 30px;
+  }
+  .click {
+    flex: 0 0 210px;
+    font-size: 25px;
+    padding: 20px 25px;
+  }
+}
